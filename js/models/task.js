@@ -1,17 +1,17 @@
 'use strict';
 // Task Model
 
-var Task = (function(){
+const Task = (function(){
   let id = 0
 
 return class {
   constructor(description, priority, list){
     this.id = ++id;
-    this.data = data;
-    this.value = value;
+    // this.data = data;
+    // this.value = value;
     this.description = description;
     this.priority = priority;
-    Store.tasks = [...Store.tasks, this];
+    Store.data.tasks = [].concat(...Store.data.tasks, this);
   }
 }
 }())

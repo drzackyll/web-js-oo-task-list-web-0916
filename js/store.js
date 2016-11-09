@@ -1,1 +1,2 @@
-let Store = {lists: [], tasks: []}
+let Store = {};
+Store.data = {lists: [], tasks: []}

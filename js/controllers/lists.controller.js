@@ -1,17 +1,19 @@
 'use strict';
 // Lists Controller
 
-function ListsController(name, age) {
-  this.title = $("[name='list_title']").val()
-  this.init = function(){new List(title)
-  $("[name='list_title']").val('')
-  $('.container ul').empty()
+function ListsController() {
 
-  Store.lists.forEach((list) => {
+
+  this.init = function(){
+  let title  = $("[name='list_title']").val()
+  debugger
+    new List(title);
+  $("[name='list_title']").val('')
+  $('.container ul').empty();
+  Store.data.lists.forEach((list) => {
+    debugger
     $('.container ul').append(`<li>name: ${list.title} </li>`)
   });
-
-
 }
 }
 //

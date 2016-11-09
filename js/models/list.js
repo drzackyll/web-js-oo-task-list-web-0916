@@ -1,6 +1,6 @@
 'use strict';
 // List Model
-var List = (function(){
+const List = (function(){
 
 let id = 0
 
@@ -11,6 +11,7 @@ return class {
     // this.value = value
     this.title = title
     this.all = []
-    Store.lists = [...Store.lists, this];
+    Store.data.lists = [].concat(...Store.data.lists, this)
+
   }}
 }())
