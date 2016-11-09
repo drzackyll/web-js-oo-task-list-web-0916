@@ -7,6 +7,7 @@ const Task = (function(){
 return class {
   constructor(description, priority, list){
     this.id = ++id;
+    this.list_id = list;
     // this.data = data;
     // this.value = value;
     this.description = description;

@@ -7,7 +7,9 @@ function TasksController() {
   this.init = function(){
     let description  = $("[name='task_description']").val();
     let priority =  $("[name='task_priority']").val();
-    new Task(description, priority);
+    let list_id = $(".something").val();
+    new Task(description, priority,list_id);
+  // $("[name='select_list']").val('');
   $("[name='task_description']").val('');
   $("[name='task_priority']").val('');
   $('.container ul').empty();
